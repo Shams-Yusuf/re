@@ -12,6 +12,8 @@ function Main() {
 };
    const minus = () => {
     setCounter(counter - 1);
+     if (counter < 1)
+     return setCounter(0)
 };
    const reset = () => {
     setCounter(0);
